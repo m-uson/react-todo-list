@@ -1,0 +1,123 @@
+#root {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+body {
+  background-color: #f2f2f2;
+}
+#root {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  max-width: 600px;
+  margin: auto;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+label {
+  display: block;
+  color: #bbb;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 20px 0 10px 0;
+}
+input {
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+textarea {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+}
+form button {
+  display: block;
+  margin: 20px auto 0;
+  background-color: #00ce89;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filter-nav button {
+  background-color: transparent;
+  border: none;
+  color: #bbb;
+  outline: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.filter-nav button.active {
+  color: #555;
+}
+
+.main-nav a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 10px;
+  color: #999;
+  font-size: 18px;
+}
+a.router-link-active {
+  border-bottom: 2px solid #00ce89;
+  padding-bottom: 4px;
+}
+
+.project {
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #e90074;
+}
+.project h3 {
+  cursor: pointer;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons .material-icons {
+  font-size: 24px;
+  margin-left: 10px;
+  color: #bbb;
+  cursor: pointer;
+}
+.material-icons:hover {
+  color: #777;
+}
+.project.completed {
+  border-left: 4px solid #00ce89;
+}
+.project.completed .tick {
+  color: #00ce89;
+}
+.details {
+  display: none;
+}
+.active {
+  display: block;
+}
