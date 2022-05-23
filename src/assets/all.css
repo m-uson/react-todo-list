@@ -20,6 +20,7 @@ form {
   background-color: #fff;
   padding: 20px;
   border-radius: 20px;
+  margin-top: 60px;
 }
 label {
   display: block;
@@ -72,6 +73,10 @@ form button {
   color: #555;
 }
 
+.main-nav {
+  text-align: center;
+  margin: 40px auto;
+}
 .main-nav a {
   display: inline-block;
   text-decoration: none;

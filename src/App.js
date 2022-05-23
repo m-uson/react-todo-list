@@ -1,20 +1,18 @@
-import React, { useEffect, useState } from "react";
-import { Project } from "./components";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { Navbar } from "./components";
+import { AddProject, Home } from "./views";
 
 const App = () => {
-  const [posts, setPosts] = useState([]);
-
-  const getPosts = async () => {
-    const response = await fetch("http://localhost:3001/projects");
-    const data = await response.json();
-    setPosts(data);
-  };
-
-  useEffect(() => {
-    getPosts();
-  }, []);
-
-  return <Project items={posts} />;
+  return (
+    <div className="App">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<AddProject />} />
+      </Routes>
+    </div>
+  );
 };
 
 export default App;
